@@ -1,0 +1,9 @@
+{
+  "typeAcquisition": {
+    "enable": true,
+    "include": [
+      "global.d.ts",
+      "node_modules/**/*.d.ts"
+    ]
+  }
+}

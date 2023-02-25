@@ -1,0 +1,78 @@
+{
+  "name": "xfriend-template-be",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/X-FRIEND/xfriend-template-be.git"
+  },
+  "engines": {
+    "node": "^17.9.1",
+    "npm": "^8.11.0"
+  },
+  "keywords": [
+    "node",
+    "javascript"
+  ],
+  "author": "xfriend - B.O <edibertooliveira@aol.com>",
+  "contributors": [
+    " - <->",
+    " - <->"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/X-FRIEND/xfriend-template-be/issues"
+  },
+  "homepage": "https://github.com/X-FRIEND/xfriend-template-be#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "joi": "^14.3.1",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "babel-eslint": "^10.1.0",
+    "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "3.2.0",
+    "eslint": "^8.24.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jest": "^27.2.1",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "husky": "^8.0.3",
+    "jest": "^29.1.1",
+    "jest-environment-jsdom": "^28.1.2",
+    "lint-staged": "^13.1.1",
+    "nodemon": "^2.0.19",
+    "prettier": "2.7.1"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json}": [
+      "npm run lint"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "scripts": {
+    "transpile": "scripts/build.bash",
+    "start": "npm run transpile && scripts/start.bash",
+    "start:dev": "scripts/dev.bash",
+    "test": "npm run test:unit",
+    "test:unit": "npx jest test/unit/",
+    "test:coverage": "npm run test:unit -- --coverage --coverageThreshold='{}'",
+    "test:int": "npx jest test/integration/' --reporters=default",
+    "lint": "eslint",
+    "lint:fix": "npm run lint -- --fix",
+    "postinstall": "husky install"
+  }
+}
