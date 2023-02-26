@@ -1,0 +1,14 @@
+src/*
+!src/index.ts
+tsconfig.json
+package-lock.json
+jest.config.js
+commitlint.config.js
+scripts
+.gitignore
+.eslintrc
+.eslintignore
+.babelrc
+.babelrc
+.vscode
+.husky
