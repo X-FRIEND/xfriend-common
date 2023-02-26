@@ -5,10 +5,10 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "DEV",
+      "name": "TEST",
       "type": "node-terminal",
       "request": "launch",
-      "command": "npm run start:dev",
+      "command": "npm test",
       "cwd": "${workspaceRoot}",
       "internalConsoleOptions": "openOnSessionStart",
       "sourceMaps": true,
@@ -24,7 +24,6 @@
         "!**/node_modules/**"
       ],
       "env": {
-        "PORT": "3001",
         "NODE_ENV": "development"
       }
     }

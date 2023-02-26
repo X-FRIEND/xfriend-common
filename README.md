@@ -1,1 +1,1 @@
-# xfriend-template-be
+# xfriend-utility

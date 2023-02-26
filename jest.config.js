@@ -1,4 +1,5 @@
 module.exports = {
+  preset: 'ts-jest',
   testEnvironment: 'jsdom',
   collectCoverage: true,
   coverageThreshold: {
@@ -10,8 +11,12 @@ module.exports = {
     }
   },
   reporters: ["default"],
-  testMatch: ["**/?(*.)(spec).js?(x)"],
-  collectCoverageFrom: ['<rootDir>/src/**/*.js', '!<rootDir>/src/index.js'],
+  testMatch: ["**/?(*.)(spec).ts?(x)"],
+  collectCoverageFrom: [
+    '<rootDir>/src/**/*.ts',
+    '!<rootDir>/src/index.ts',
+    '!<rootDir>/src/lib/custom-error-constants.ts'
+  ],
   coverageDirectory: 'coverage',
   coverageReporters: [
     "text-summary",
