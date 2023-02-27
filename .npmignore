@@ -6,6 +6,7 @@ jest.config.js
 commitlint.config.js
 scripts
 .gitignore
+coverage
 .eslintrc
 .eslintignore
 .babelrc

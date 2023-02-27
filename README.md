@@ -1,1 +1,1 @@
-# xfriend-utility
+# xfriend-common
