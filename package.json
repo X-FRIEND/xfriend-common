@@ -1,6 +1,6 @@
 {
   "name": "xfriend-common",
-  "version": "0.5.2",
+  "version": "0.5.4",
   "description": "",
   "main": "index.js",
   "repository": {
@@ -67,8 +67,7 @@
     "test:unit": "npx jest src/lib/",
     "test:coverage": "npm run test:unit -- --coverage --coverageThreshold='{}'",
     "lint": "eslint . --ext .ts",
-    "lint:fix": "npm run lint -- --fix",
-    "postinstall": "husky install"
+    "lint:fix": "npm run lint -- --fix"
   },
   "dependencies": {
     "typescript": "^4.9.5",
