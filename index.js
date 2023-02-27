@@ -1,3 +1,3 @@
-import utility from './build'
+const utility = require('./build')
 
-export default utility
+module.exports = utility
